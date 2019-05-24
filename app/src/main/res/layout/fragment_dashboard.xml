@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/x_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="0"
+            android:maxLines="4"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEIGHBOR INFORMATION"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/x_neighbor_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="0"
+            android:maxLines="4"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/x_neighbor"
+                android:text="NEIGHBOR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WALLET"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="user"
+                android:textSize="18sp"
+                android:layout_weight="2"/>
+            <EditText
+                android:id="@+id/x_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="user name"
+                android:textSize="18sp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/x_pri_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="pri-key: "
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/x_pub_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="pub-key: "
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/x_generate"
+                android:text="GENERATE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+            <Button
+                android:id="@+id/x_save"
+                android:text="SAVE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/x_show"
+                android:text="SHOW"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

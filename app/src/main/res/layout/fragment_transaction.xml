@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/x_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="0"
+            android:maxLines="4"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RDT COIN TRANSACTION"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="sender"
+                android:textSize="18sp"
+                android:layout_weight="2"/>
+            <EditText
+                android:id="@+id/x_sender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="sender name"
+                android:textSize="18sp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="recipient"
+                android:textSize="18sp"
+                android:layout_weight="2"/>
+            <EditText
+                android:id="@+id/x_recipient"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="recipient name"
+                android:textSize="18sp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="amount"
+                android:textSize="18sp"
+                android:layout_weight="2"/>
+            <EditText
+                android:id="@+id/x_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textSize="18sp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/x_transact"
+                android:text="transact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MINING"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/x_mine"
+                android:text="mine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

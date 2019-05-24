@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/x_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="0"
+            android:maxLines="4"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USER ACCOUNT INFORMATION"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="server url"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/x_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="http://a.b.c.d:5000"
+                android:textSize="18sp"
+                android:layout_weight="4"/>
+            <Button
+                android:id="@+id/x_url_save"
+                android:text="save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user name"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/x_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="user name"
+                android:textSize="18sp"
+                android:layout_weight="4"/>
+            <Button
+                android:id="@+id/x_name_save"
+                android:text="save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user password"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/x_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="user password"
+                android:textSize="18sp"
+                android:layout_weight="4"/>
+            <Button
+                android:id="@+id/x_password_save"
+                android:text="save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/x_check_server"
+                android:text="check server"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/x_unregister"
+                android:text="unregister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+            <Button
+                android:id="@+id/x_register"
+                android:text="register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/x_logout"
+                android:text="logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+            <Button
+                android:id="@+id/x_login"
+                android:text="login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
